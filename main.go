@@ -22,7 +22,7 @@ func init() {
 func main() {
 	app := &cli.App{
 		Name:  "chief",
-		Usage: "a continuous integration/deployment server for hobbyists",
+		Usage: "a continuous integration/deployment server for minimalists",
 		Commands: []*cli.Command{
 			{
 				Name:   "setup",
@@ -55,8 +55,8 @@ func main() {
 				Usage: "manage pipelines",
 				Subcommands: []*cli.Command{
 					{
-						Name:   "add",
-						Usage:  "add a new pipeline to the chief server",
+						Name:   "create",
+						Usage:  "create a new pipeline",
 						Action: access.AddUserCommand,
 					},
 				},
@@ -207,6 +207,10 @@ func killServer(c *cli.Context) error {
 
 	http.Get("http://localhost:2222/kill")
 	return nil
+}
+
+func newPipeline(c *cli.Context) {
+
 }
 
 const StatusMessage = `

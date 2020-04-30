@@ -88,7 +88,7 @@ func Ensure(clearance string) error {
 	if len(config.Global().Access) > 1 {
 		usr = getInput("Enter username: ")
 	} else {
-		for k, _ := range config.Global().Access {
+		for k := range config.Global().Access {
 			usr = k
 		}
 	}
