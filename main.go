@@ -22,7 +22,7 @@ func init() {
 func main() {
 	app := &cli.App{
 		Name:  "chief",
-		Usage: "a continous integration/deployment server for hobbyists",
+		Usage: "a continuous integration/deployment server for hobbyists",
 		Commands: []*cli.Command{
 			{
 				Name:   "setup",
