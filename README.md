@@ -1,6 +1,6 @@
 # Chief
 
-Chief is an elegant continuous integration & deployment server, for minimalists.
+Chief is a lightweight continuous integration & deployment server for minimalists.
 
 ## Installation
 
